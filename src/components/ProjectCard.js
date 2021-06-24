@@ -4,7 +4,7 @@ function ProjectCard({ project: { name, image, github_url } }) {
     return (
         <div className="projectrCard col-md-6 col-lg-4 my-2">
             <figure className="projectCard__wrapper">
-                <a href="#" target="_blank" rel="noopener noreferrer" >
+               <a href={github_url} target="_blank" rel="noopener noreferrer" >
                     <img src={image} alt={name} className="projectCard__image" />
                 </a>
                 <div className="projectCard__title">
